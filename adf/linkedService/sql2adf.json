@@ -1,0 +1,31 @@
+{
+	"name": "sql2adf",
+	"type": "Microsoft.DataFactory/factories/linkedservices",
+	"properties": {
+		"parameters": {
+			"Password": {
+				"type": "String",
+				"defaultValue": "Adminsql123"
+			},
+			"database": {
+				"type": "String",
+				"defaultValue": "dev"
+			},
+			"data base": {
+				"type": "String",
+				"defaultValue": "sql_DB"
+			}
+		},
+		"annotations": [],
+		"type": "AzureSqlDatabase",
+		"typeProperties": {
+			"server": "sqlserverd004.database.windows.net",
+			"database": "@{linkedService().data base}",
+			"encrypt": "mandatory",
+			"trustServerCertificate": true,
+			"authenticationType": "SQL",
+			"userName": "admin123",
+			"password": "@{linkedService().Password}"
+		}
+	}
+}

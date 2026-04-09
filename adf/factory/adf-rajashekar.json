@@ -1,0 +1,9 @@
+{
+	"name": "adf-rajashekar",
+	"location": "southindia",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "1ef4e944-eafd-41bf-960a-b6e78ea455f2",
+		"tenantId": "f0289586-f842-4afb-bfd3-7f3c899a5d3c"
+	}
+}
