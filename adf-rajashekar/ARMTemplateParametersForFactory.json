@@ -1,0 +1,21 @@
+{
+	"$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
+	"contentVersion": "1.0.0.0",
+	"parameters": {
+		"factoryName": {
+			"value": "adf-rajashekar"
+		},
+		"blob2adf_connectionString": {
+			"value": ""
+		},
+		"sql2adf_properties_typeProperties_server": {
+			"value": "sqlserverd004.database.windows.net"
+		},
+		"sql2adf_properties_typeProperties_database": {
+			"value": "@{linkedService().data base}"
+		},
+		"sql2adf_properties_typeProperties_userName": {
+			"value": "admin123"
+		}
+	}
+}
